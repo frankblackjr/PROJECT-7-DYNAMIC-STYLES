@@ -1,0 +1,27 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+nav ul {
+  text-align: center;
+  margin: 0 auto;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+nav ul li a {
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.main h1, h2 {
+  text-align: center;
+}

@@ -3,25 +3,60 @@
   margin: 0px;
 }
 
-nav ul {
-  text-align: center;
-  margin: 0 auto;
-  list-style: none;
+html, body {
+  height: 100vh;
 }
 
-nav ul li {
-  margin: 0 auto;
-  padding: 0 auto;
+body {
+  min-height: 100vh;
 }
 
-nav ul li a {
-  display: block;
+.wrapper {
+  margin: 10px 12%;
+  background-color: #ddd;
+  height: 100%;
+}
+
+nav {
   margin: 0 auto;
-  color: #fff;
+  background-color: black;
+  width: 100%;
+  height: 46px;
+}
+
+.nav-move {
+  margin: 0 25%
+}
+
+nav a {
+  margin: 0;
   text-decoration: none;
-  font-size: 20px;
+  color: black;
+  padding: 14px 16px;
+  background-color: green;
+  float: left;
+  border-left: 1px black solid;
+}
+
+nav a:hover {
+  background-color: #ddd;
+}
+
+.main {
+  clear: both;
 }
 
 .main h1, h2 {
   text-align: center;
+}
+
+.under-main p {
+  padding: 15px 0;
+}
+
+.under-main p img {
+  width: 420px;
+  height: auto;
+  padding: 0 5px;
+  float: left;
 }

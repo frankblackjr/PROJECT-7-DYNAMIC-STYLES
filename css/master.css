@@ -52,6 +52,7 @@ nav a:hover {
 
 .under-main p {
   padding: 15px 0;
+  margin: 12px 5px;
 }
 
 .under-main p img {
@@ -59,4 +60,10 @@ nav a:hover {
   height: auto;
   padding: 0 5px;
   float: left;
+}
+
+button {
+  display: block;
+  clear: both;
+  margin: 12px 5px;
 }

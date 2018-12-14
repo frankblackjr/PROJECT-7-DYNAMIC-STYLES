@@ -4,19 +4,21 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="./css/master.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <script src="./JS/script.js" charset="utf-8"></script>
   <title>Dynamic Styles</title>
 </head>
 
 <body>
   <nav>
-    <div class="nav-move">
-      <a href="">Home</a>
-      <a href="">Our Plan</a>
-      <a href="">Our People</a>
-      <a href="">Legal</a>
-      <a href="">History</a>
-    </div>
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">Our Plan</a></li>
+      <li><a href="">Our People</a></li>
+      <li><a href="">Legal</a></li>
+      <li><a href="">History</a></li>
+    </ul>
   </nav>
   <div class="wrapper">
     <div class="main">
@@ -34,7 +36,8 @@
           possimus nobis quos doloribus, repudiandae assumenda sint, voluptatem minima. Iste!</p>
       </div>
     </div>
-    <button type="button" onclick="changePara();">Change all paragraphs font</button>
+    <button type="button" id="change" onclick="changePara();">Change all paragraphs font</button>
+    <button type="button" onclick="changeBack();">Change Back</button>
   </div>
 </body>
 

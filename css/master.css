@@ -1,10 +1,9 @@
+/*  Default styles  */
 * {
   margin: 0;
   padding: 0;
-}
-
-html {
-  overflow: scroll;
+  box-sizing: border-box;
+  font-family: "open Sans";
 }
 
 ::-webkit-scrollbar {
@@ -12,50 +11,98 @@ html {
   background: transparent;
 }
 
-html,
-body {
-  height: 100vh;
-}
-
-body {
-  min-height: 100vh;
-}
-
-.wrapper {
-  overflow: auto;
+body, html {
   height: 100%;
-  margin: 0 10%;
-  background-color: #ddd;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
+body {
+  min-height: 100%;
+  background-color: #39a2e1;
+}
+
+/* End Default Styles  */
+#header {
+  margin: 0;
+  height: 293px;
+  position: relative;
+  text-align: center;
+}
+
+#header-image {
+  width: 100%;
+  height: 293px;
+  margin: 0;
+  border-radius: 0 0 25px 25px;
+}
+
+#center-company-name {
+  font-size: 350%;
+  color: #7dc2eb;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*  Nav bar style  */
 nav {
   width: 100%;
-  height: 46px;
+  height: 47px;
   margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background-color: #1474a9;
+  font-size: 0;
+  border-radius: 25px;
+}
+
+ul {
+  margin: 0 10%;
+}
+
+ul li {
+  display: inline-block;
+  list-style: none;
+  width: 100px;
   margin: 0;
   padding: 0;
-  list-style: none;
-  text-align: center;
-  background-color: black;
+  line-height: 47px;
 }
 
-nav li {
-  display: inline-block;
+ul li a {
+  font-size: 15px;
+  display: block;
+  width: 100%;
   margin: 0;
-}
-
-nav li a {
-  display: inline-block;
-  margin: 0;
-  padding: 14px 16px;
+  padding: 0px 10px;
   text-decoration: none;
   color: black;
-  border-left: 1px black solid;
-  background-color: green;
+  background-color: #1474a9;
+  border-radius: 10px 10px 0 0;
 }
 
 nav a:hover {
-  background-color: #ddd;
+  background-color: #1993d7;
+  color: #373737;
+}
+
+#active {
+  background-color: #1993d7;
+  color: #373737;
+}
+
+/*  End of Nav Bar*/
+.wrapper {
+  overflow: auto;
+  height: auto;
+  min-height: 100%;
+  margin: 0px 12.5%;
+  padding: 0 auto;
+  overflow: hidden;
+  background-color: #f2f9fd;
+  border-radius: 25px;
 }
 
 .main {
@@ -63,8 +110,7 @@ nav a:hover {
   padding: 0 0 12px 0;
 }
 
-.main h1,
-h2 {
+.main h1, h2 {
   text-align: center;
 }
 
@@ -75,13 +121,20 @@ p {
 .under-main p {
   margin: 12px 5px;
   padding: 15px 0;
+  text-align: center;
 }
 
-img {
+.column {
   float: left;
-  width: 350px;
-  height: auto;
-  padding: 0 3px;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 #change {
@@ -94,4 +147,25 @@ button {
   display: block;
   float: left;
   margin: 12px 5px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #373737;
+  color: white;
+  border-radius: 25px 25px 0 0;
+  width: 75%;
+  margin: 0 auto;
+}
+
+footer, #footer-legal {
+  clear: both;
+  text-align: center;
+  display: block;
+  border-radius: 25px;
+}
+
+#logo {
+  width: 30px;
+  height: auto;
 }

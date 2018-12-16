@@ -3,22 +3,20 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/master.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
-  <link rel="stylesheet" href="./css/master.css">
   <title>Dynamic Styles</title>
 </head>
 
 <body>
   <div id="header">
     <img id="header-image" src="./images/header.jpg" alt="header">
-    <h1 id="center-company-name">The Dull Company</h1>
   </div>
   <nav>
     <ul>
-      <li><a id="active" href="index.html">Home</a></li>
-      <li><a href="our-plan.html">Our Plan</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a  id="active" href="our-plan.html">Our Plan</a></li>
       <li><a href="our-people.html">Our People</a></li>
       <li><a href="legal.html">Legal</a></li>
       <li><a href="history.html">History</a></li>
@@ -27,6 +25,7 @@
   <div class="wrapper">
     <div class="main">
       <br>
+      <h1>The Dull Company</h1>
       <div class="under-main">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
           aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -40,32 +39,17 @@
         <h2 id="legal">Legal</h2>
         <p>No one may use the Work and, in such a notice placed by Apple identifying such program or other modifications derived from this software without specific, written prior permission. Agreement and any licenses granted under Section 2(b)
           shall terminate as of the Work, provided that you can do these things. To protect your rights with two steps: (1) copyright the software, and (2) offer you this license is required to ensure that your work is unrelated to TeX.</p>
+        <img id="people" src="./images/1.jpg" alt="Office people">
+        <img id="people" src="./images/2.jpg" alt="Office people part 2">
+        <button type="button" id="change" onclick="changePara();">Change all paragraphs font</button>
+        <button type="button" onclick="changeBack();">Change Back</button>
+
       </div>
-      <div class="row">
-        <div class="column">
-          <img src="./images/1.jpg" alt="Office people" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="./images/2.jpg" alt="Office people part 2" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="./images/3.jpg" alt="Office people part 2" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="./images/4.jpg" alt="Office people part 2" style="width:100%">
-        </div>
-      </div>
-      <button type="button" id="change" onclick="changePara();">Change all paragraphs font</button>
-      <button type="button" onclick="changeBack();">Change Back</button>
-      <button type="button" onclick="pretty();">Beauitify logo</button>
-      <button type="button" onclick="unpretty();">Debeauitify logo</button>
     </div>
+    <footer>
+      <p #footer-legal>© 2018 Flack Dev LLC <img id="logo" src="./images/logo.png" alt="logo"></p>
+    </footer>
   </div>
-  <footer>
-    <p #footer-legal>© 2018 Flack Dev LLC
-      <img id="logo" src="./images/logo.png" alt="logo">
-    </p>
-  </footer>
 </body>
 <script src="./JS/script.js" charset="utf-8"></script>
 

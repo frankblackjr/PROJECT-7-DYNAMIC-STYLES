@@ -1,9 +1,19 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
+html {
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+html,
+body {
   height: 100vh;
 }
 
@@ -12,20 +22,21 @@ body {
 }
 
 .wrapper {
-  margin: 10px 12%;
-  background-color: #ddd;
+  overflow: auto;
   height: 100%;
+  margin: 0 10%;
+  background-color: #ddd;
 }
 
 nav {
-  margin: 0 auto;
-  background-color: black;
   width: 100%;
   height: 46px;
-  list-style: none;
+  margin: 0 auto;
   margin: 0;
   padding: 0;
+  list-style: none;
   text-align: center;
+  background-color: black;
 }
 
 nav li {
@@ -34,13 +45,13 @@ nav li {
 }
 
 nav li a {
+  display: inline-block;
   margin: 0;
+  padding: 14px 16px;
   text-decoration: none;
   color: black;
-  padding: 14px 16px;
-  background-color: green;
   border-left: 1px black solid;
-  display: inline-block;
+  background-color: green;
 }
 
 nav a:hover {
@@ -49,9 +60,11 @@ nav a:hover {
 
 .main {
   clear: both;
+  padding: 0 0 12px 0;
 }
 
-.main h1, h2 {
+.main h1,
+h2 {
   text-align: center;
 }
 
@@ -60,15 +73,15 @@ p {
 }
 
 .under-main p {
-  padding: 15px 0;
   margin: 12px 5px;
+  padding: 15px 0;
 }
 
-.under-main p img {
-  width: 420px;
-  height: auto;
-  padding: 0 5px;
+img {
   float: left;
+  width: 350px;
+  height: auto;
+  padding: 0 3px;
 }
 
 #change {

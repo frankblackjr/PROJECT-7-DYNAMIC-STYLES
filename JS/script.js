@@ -24,3 +24,19 @@ function pretty() {
 function unpretty() {
   let x = document.getElementById('center-company-name').style.fontFamily = "open Sans";
 }
+
+function move() {
+  let x = document.getElementById('mover');
+  if (x.style.cssFloat = "left") {
+    x.style.cssFloat = "right";
+  }
+
+  else if (x.style.cssFloat = "right")  {
+    x.style.cssFloat = "left";
+  }
+
+  else {
+    alert("error");
+  }
+
+}

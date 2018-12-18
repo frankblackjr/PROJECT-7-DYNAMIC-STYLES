@@ -146,7 +146,13 @@ p {
 .mover {
   width: 25%;
   padding: 5px;
+  display: block;
+  text-align: center;
+}
 
+#mover {
+  display: inline;
+  float: right;
 }
 
 button {

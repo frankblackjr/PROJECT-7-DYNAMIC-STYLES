@@ -27,16 +27,22 @@ function unpretty() {
 
 function move() {
   let x = document.getElementById('mover');
-  if (x.style.cssFloat = "left") {
+  if (x.style.cssFloat === "left") {
     x.style.cssFloat = "right";
-  }
-
-  else if (x.style.cssFloat = "right")  {
+    alert("Right");
+  } else {
     x.style.cssFloat = "left";
+    alert("left");
   }
+}
 
-  else {
-    alert("error");
+function changer() {
+  let x = document.getElementsByClassName("changer");
+  for (var i = 0; i < x.length; i++) {
+    let p = i + 4;
+    if (p >= 4) {
+      p-=2;
+    }
+    x[i].src = `./images/${p}.jpg`;
   }
-
 }

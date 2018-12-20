@@ -5,14 +5,14 @@ function onWindowload() {
 
 function changePara() {
   let x = document.getElementsByTagName('P');
-  for (var i = 0; i < x.length; i++) {
+  for (let i = 0; i < x.length; i++) {
     x[i].style.fontFamily = "lato";
   }
 }
 
 function changeBack() {
   let x = document.getElementsByTagName('P');
-  for (var i = 0; i < x.length; i++) {
+  for (let i = 0; i < x.length; i++) {
     x[i].style.fontFamily = "open Sans"
   }
 }
@@ -35,14 +35,29 @@ function move() {
     alert("left");
   }
 }
-
+/*
 function changer() {
   let x = document.getElementsByClassName("changer");
-  for (var i = 0; i < x.length; i++) {
-    let p = i + 4;
-    if (p >= 4) {
-      p-=2;
+  for (let i = 0; i < x.length; i++) {
+    let temp = x[i].src;
+    if (i == 0) {
+      x[i].src = `./images/${i+x.length}.jpg`
     }
-    x[i].src = `./images/${p}.jpg`;
+    else {
+      x[i].src = `./images/${i}.jpg`
+    }
   }
+}
+*/
+function changer() {
+let x = document.getElementsByClassName("changer");
+for (let i = 0; i < x.length; i++) {
+  let temp = x[i].src;
+  if (i < 3) {
+    x[i].src = x[i+1].src;
+  }
+  else {
+    x[i].src = x[0].src;
+  }
+}
 }

@@ -29,35 +29,46 @@ function move() {
   let x = document.getElementById('mover');
   if (x.style.cssFloat === "left") {
     x.style.cssFloat = "right";
-    alert("Right");
   } else {
     x.style.cssFloat = "left";
-    alert("left");
   }
 }
-/*
+
 function changer() {
   let x = document.getElementsByClassName("changer");
+  let temp = x[0].src;
+
+  /*for (var i = 0; i < x.length; i++) {
+    fadeOut(x[i]);
+  }*/
   for (let i = 0; i < x.length; i++) {
-    let temp = x[i].src;
-    if (i == 0) {
-      x[i].src = `./images/${i+x.length}.jpg`
+    if (i < 3) {
+      x[i].src = x[i + 1].src;
+    } else {
+      x[i].src = temp;
     }
-    else {
-      x[i].src = `./images/${i}.jpg`
-    }
+    fadeIn(x[i]);
   }
 }
-*/
-function changer() {
-let x = document.getElementsByClassName("changer");
-for (let i = 0; i < x.length; i++) {
-  let temp = x[i].src;
-  if (i < 3) {
-    x[i].src = x[i+1].src;
-  }
-  else {
-    x[i].src = x[0].src;
-  }
+
+function fadeIn(img) {
+  let dec = 0.1;
+  var inter = setInterval(function() {
+    if (dec >= 1) {
+      clearInterval(inter);
+    }
+    img.style.opacity = dec;
+    dec += 0.1;
+  }, 150);
 }
+
+function fadeOut(img) {
+  var dec = 1;
+  var inter = setInterval(function() {
+    if (dec <= 0.1) {
+      clearInterval(inter);
+    }
+    img.style.opacity = dec;
+    dec -= 0.1;
+  }, 150);
 }

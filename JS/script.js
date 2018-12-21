@@ -34,20 +34,27 @@ function move() {
   }
 }
 
-function changer() {
+function pleaseWork() {
   let x = document.getElementsByClassName("changer");
+  for (var value of x) {
+    fadeOut(value);
+  }
+  var fuckle = setInterval(changer(x),0);
+  for (var value of x) {
+    fadeIn(value);
+  }
+}
+//**************************************************************
+//https://stackoverflow.com/questions/5187968/how-should-i-call-3-functions-in-order-to-execute-them-one-after-the-other *****
+//**************************************************************
+function changer(x) {
   let temp = x[0].src;
-
-  /*for (var i = 0; i < x.length; i++) {
-    fadeOut(x[i]);
-  }*/
   for (let i = 0; i < x.length; i++) {
     if (i < 3) {
       x[i].src = x[i + 1].src;
     } else {
       x[i].src = temp;
     }
-    fadeIn(x[i]);
   }
 }
 
@@ -59,7 +66,7 @@ function fadeIn(img) {
     }
     img.style.opacity = dec;
     dec += 0.1;
-  }, 150);
+  }, 100);
 }
 
 function fadeOut(img) {
@@ -70,5 +77,5 @@ function fadeOut(img) {
     }
     img.style.opacity = dec;
     dec -= 0.1;
-  }, 150);
+  }, 100);
 }

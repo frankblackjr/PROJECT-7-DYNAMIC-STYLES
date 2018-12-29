@@ -26,6 +26,7 @@
   </nav>
   <div class="wrapper">
     <div class="main">
+      <div id="clock"></div>
       <br>
       <div class="under-main">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
@@ -43,22 +44,35 @@
       </div>
       <div class="row">
         <div class="column">
-          <img src="./images/1.jpg" alt="Office people" style="width:100%">
+          <img src="./images/1.jpg" class="changer" alt="Office people" style="width:100%">
         </div>
         <div class="column">
-          <img src="./images/2.jpg" alt="Office people part 2" style="width:100%">
+          <img src="./images/2.jpg" class="changer" alt="Office people part 2" style="width:100%">
         </div>
         <div class="column">
-          <img src="./images/3.jpg" alt="Office people part 2" style="width:100%">
+          <img src="./images/3.jpg" class="changer" alt="Office people part 2" style="width:100%">
         </div>
         <div class="column">
-          <img src="./images/4.jpg" alt="Office people part 2" style="width:100%">
+          <img src="./images/4.jpg" class="changer" alt="Office people part 2" style="width:100%">
         </div>
       </div>
-      <button type="button" id="change" onclick="changePara();">Change all paragraphs font</button>
+      <!---->
+      <div class="move">
+        <p><img id="mover" src="./images/move.jpg" alt="Moving image" style="width: 25%">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.Incididunt quem noster a aliqua, dolor laboris distinguantur se offendit quid ne expetendis philosophari aut illum aliquip est esse magna an ne anim nulla ne doctrina, iis veniam
+          probant, ab vidisse fidelissimae, quo enim offendit. Iudicem esse possumus, nostrud familiaritatem ut ingeniis. Constias quem e cupidatat relinqueret, singulis aute incididunt nostrud ut ad quem fugiat enim deserunt, fore probant non
+          singulis.Amet constias coniunctione in non in transferrem, senserit fore ipsum in cillum, amet constias aut sunt dolore. Ne iudicem iis arbitror, deserunt quae a vidisse graviterque te ea quis pariatur nostrud, labore expetendis
+          despicationes. Litteris aute possumus cupidatat, fugiat ex voluptate, anim aliquip iis ingeniis, fabulas dolor ab incurreret firmissimum. Ubi non culpa litteris qui veniam ad mandaremus ubi cillum ea ab ipsum hic dolore ne nostrud te
+          export.Legam senserit sempiternum, voluptate de sunt. Do quorum do nulla. Te eram illum te quibusdam.De labore ita aute, a aliqua aute velit aliquip, ut id veniammultos dolore sed eram quibusdam vidisse. Te tamen quamquam probant, nostrud
+          quis arbitror ad dolor quibusdam te quibusdam constias ad sunt senserit.Fabulas ea noster, quorum expetendis qui voluptatibus.</p>
+      </div>
+      <!---->
+      <button type="button" id="change" onclick="changePara();">Change paragraphs font</button>
       <button type="button" onclick="changeBack();">Change Back</button>
       <button type="button" onclick="pretty();">Beauitify logo</button>
       <button type="button" onclick="unpretty();">Debeauitify logo</button>
+      <button type="button" onclick="move();">Move</button>
     </div>
   </div>
   <footer>
